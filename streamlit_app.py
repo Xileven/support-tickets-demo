@@ -114,12 +114,6 @@ edited_df = st.data_editor(
     use_container_width=True,
     hide_index=True,
     column_config={
-        "ID": st.column_config.TextColumn(
-            "ID",
-            help="Ticket ID",
-            required=True,
-            filterable=True,  # Add filter to ID column
-        ),
         "Status": st.column_config.SelectboxColumn(
             "Status",
             help="Ticket status",
